@@ -15,19 +15,37 @@ class TaskManager:
             "status": "A Fazer"
         }
         self.tasks[self.counter] = task
+        
+        # PRINT PARA VISUALIZAÇÃO:
+        print(f"\n[CREATE] Nova carga adicionada: {task}")
+        
         self.counter += 1
         return task
 
     def read_tasks(self):
-        return list(self.tasks.values())
+        tasks_list = list(self.tasks.values())
+        
+        # PRINT PARA VISUALIZAÇÃO:
+        print(f"\n[READ] Listando todas as cargas do sistema: {tasks_list}")
+        
+        return tasks_list
 
     def update_status(self, task_id, new_status):
         if task_id in self.tasks:
             self.tasks[task_id]["status"] = new_status
+            
+            # PRINT PARA VISUALIZAÇÃO:
+            print(f"\n[UPDATE] Status da carga ID {task_id} alterado para: {new_status}")
+            
             return self.tasks[task_id]
         raise KeyError("Tarefa não encontrada.")
 
     def delete_task(self, task_id):
         if task_id in self.tasks:
-            return self.tasks.pop(task_id)
+            removed = self.tasks.pop(task_id)
+            
+            # PRINT PARA VISUALIZAÇÃO:
+            print(f"\n[DELETE] Registro de carga ID {task_id} removido com sucesso!")
+            
+            return removed
         raise KeyError("Tarefa não encontrada.")
