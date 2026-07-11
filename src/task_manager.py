@@ -16,7 +16,7 @@ class TaskManager:
         }
         self.tasks[self.counter] = task
         
-        # PRINT PARA VISUALIZAÇÃO:
+        
         print(f"\n[CREATE] Nova carga adicionada: {task}")
         
         self.counter += 1
@@ -25,7 +25,7 @@ class TaskManager:
     def read_tasks(self):
         tasks_list = list(self.tasks.values())
         
-        # PRINT PARA VISUALIZAÇÃO:
+        
         print(f"\n[READ] Listando todas as cargas do sistema: {tasks_list}")
         
         return tasks_list
@@ -34,7 +34,7 @@ class TaskManager:
         if task_id in self.tasks:
             self.tasks[task_id]["status"] = new_status
             
-            # PRINT PARA VISUALIZAÇÃO:
+            
             print(f"\n[UPDATE] Status da carga ID {task_id} alterado para: {new_status}")
             
             return self.tasks[task_id]
@@ -44,7 +44,7 @@ class TaskManager:
         if task_id in self.tasks:
             removed = self.tasks.pop(task_id)
             
-            # PRINT PARA VISUALIZAÇÃO:
+            
             print(f"\n[DELETE] Registro de carga ID {task_id} removido com sucesso!")
             
             return removed
