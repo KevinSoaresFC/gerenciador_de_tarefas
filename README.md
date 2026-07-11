@@ -15,7 +15,7 @@ O sistema foi planejado inicialmente para cobrir as operações básicas de cont
 * **Remover Tarefas:** Cancelar ou arquivar registros.
 
 ---
-
+``
 ## ⚙️ Metodologia Ágil Adotada
 
 Para a gestão deste projeto, foi adotada uma abordagem ágil **Híbrida (Scrum + Kanban)**:
