@@ -19,7 +19,7 @@ O sistema foi planejado inicialmente para cobrir as operações básicas de cont
 ## ⚙️ Metodologia Ágil Adotada
 
 Para a gestão deste projeto, foi adotada uma abordagem ágil **Híbrida (Scrum + Kanban)**:
-* **Kanban:** Utilizado através da aba *Projects* do GitHub para dar visibilidade total ao fluxo de trabalho nas colunas **To Do** (A Fazer), **In Progress** (Em Progresso) e **Done** (Concluído).
+* **Kanban:** Utilizado através da aba *Projects* do GitHub para dar visibilidade total ao fluxo de trabalho nas colunas **BackLog**, **To Do** (A Fazer), **In Progress** (Em Progresso) e **Done** (Concluído).
 * **Scrum:** Divisão das metas de desenvolvimento em incrementos funcionais (representados pelos commits e issues rastreáveis), garantindo entregas rápidas e feedback contínuo.
 
 ---
